@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+:root {
+  --text-color-blue-blanco: #FFFFFF;
+}
+
+
+/* Dark mode variables */
+.dark-mode { /* Even though named "dark-mode", these will be your LIGHT theme settings */
+  --bg-color: #2563eb; /* White background */
+  --text-color-blue-blanco: #7c3aed; /* A nice, rich blue for primary text */
+  --purple-color: #6366f1; /* A slightly lighter blue/purple for accents (you can adjust this) */
+
+  --color-gray-50: #f9fafb; /* Very light gray */
+  --color-gray-100: #f3f4f6; /* Light gray */
+  --color-gray-200: #e5e7eb; /* Slightly darker gray */
+  --color-gray-400: #d1d5db; /* Medium gray */
+  --color-gray-600: #9ca3af; /* Darker gray */
+  --color-gray-800: #f0f4fa; /* Almost black (use for strong contrast) */
+
+
+  --color-purple-600: #a78bfa; /* Lighter purple (adjust as needed) */
+  --color-purple-700: #8b5cf6; /* Medium purple */
+  --color-purple-800: #7c3aed; /* Darker purple */
+  --color-purple-900: #6d28d9; /* Very dark purple */
+  --color-purple-950: #581c87; /* Deepest purple */
+
+
+}
+.bg-gradient-to-br  {
+  @apply bg-gradient-to-br from-[var(--color-purple-400)] to-[var(--color-white-900)];
+}
